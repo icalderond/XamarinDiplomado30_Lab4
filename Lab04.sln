@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCLProject", "PCLProject\PCLProject.csproj", "{312F9DEA-47FE-416B-AC0C-3B2231E79573}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidApp", "AndroidApp\AndroidApp.csproj", "{C4EA46E0-6D82-4B57-B906-ACBB6A7CD7D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{312F9DEA-47FE-416B-AC0C-3B2231E79573}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{312F9DEA-47FE-416B-AC0C-3B2231E79573}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{312F9DEA-47FE-416B-AC0C-3B2231E79573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4EA46E0-6D82-4B57-B906-ACBB6A7CD7D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4EA46E0-6D82-4B57-B906-ACBB6A7CD7D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4EA46E0-6D82-4B57-B906-ACBB6A7CD7D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4EA46E0-6D82-4B57-B906-ACBB6A7CD7D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
