@@ -22,9 +22,22 @@ namespace UWPApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        //public MainPage()
+        //{
+        //    this.InitializeComponent();
+        //}
         public MainPage()
         {
             this.InitializeComponent();
+            /* Creamos la instancia del código compartido * y le inyectamos la dependencia. */
+            var Validator =
+                new PCLProject.AppValidator(
+                    new UWPDialog());
+            /* Aquí podríamos establecer los valores de las propiedades
+             * EMail, Password y Device*/
+            // Realizamos la validación
+            Validator.Validate();
         }
+
     }
 }
