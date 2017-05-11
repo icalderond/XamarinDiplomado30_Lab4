@@ -17,6 +17,14 @@ namespace AndroidApp
 			/* Aquí podríamos establecer los valores de las propiedades
 			 * EMail, Password y Device*/
 			// Realizamos la validación
+
+			Validator.EMail = "TuCorreoElectrónico";
+			Validator.Password = "TuContraseña";
+			Validator.Device =
+				Android.Provider.Settings.Secure.GetString(
+					ContentResolver,
+					Android.Provider.Settings.Secure.AndroidId);
+
 			Validator.Validate();
 			// Set our view from the "main" layout resource
 			// SetContentView (Resource.Layout.Main);
