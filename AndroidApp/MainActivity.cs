@@ -7,20 +7,19 @@ namespace AndroidApp
 	[Activity(Label = "AndroidApp", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class MainActivity : Activity
 	{
-		int count = 1;
-
-		protected override void OnCreate(Bundle savedInstanceState)
+		protected override void OnCreate(Bundle bundle)
 		{
-			base.OnCreate(savedInstanceState);
-
+			base.OnCreate(bundle);
+			/* Creamos la instancia del código compartido
+			 y le inyectamos la dependencia. */
+			var Validator =
+				new PCLProject.AppValidator(new AndroidDialog(this));
+			/* Aquí podríamos establecer los valores de las propiedades
+			 * EMail, Password y Device*/
+			// Realizamos la validación
+			Validator.Validate();
 			// Set our view from the "main" layout resource
-			SetContentView(Resource.Layout.Main);
-
-			// Get our button from the layout resource,
-			// and attach an event to it
-			Button button = FindViewById<Button>(Resource.Id.myButton);
-
-			button.Click += delegate { button.Text = $"{count++} clicks!"; };
+			// SetContentView (Resource.Layout.Main);
 		}
 	}
 }
